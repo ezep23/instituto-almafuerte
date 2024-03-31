@@ -4,147 +4,50 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Antonio';
 }
 
 /* Variables css */ 
 :root{
     --main-blue: rgb(3, 32, 139, 0.899);
+    --second-color: #f1f1f1;
     --main-font: 'Poppins';
     --second-font: 'Antonio';
 }
 
 /* Navbar */
 
-.navbar-index{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.navbar{
     background-color: var(--main-blue);
-}
-
-/* Secciones */
-
-.seccion-blanca{
-    display: flex;
-    color: var(--main-blue);
-    font-size: 1.5rem;
-    background-color: #fff;
     
+    & .navbar-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding: 10px;
+
+        .navbar-logo{
+            aspect-ratio: 2/2;
+            object-fit: cover;
+        }
+
+        .navbar-enlaces > a{
+            color: var(--second-color);
+            text-decoration: none;
+            font-size: 1.5rem;
+            margin: 10px;
+        }
+    }
 }
 
 .seccion-azul{
     display: flex;
     background-color: var(--main-blue);
-    color:#fff;
-}
-
-.seccion-textos{
-    color: #000;
-    margin: 20px;
-    font-size: 1rem;
-    text-align:justify;
-    align-items: center;
+    color: var(--second-color);
 }
 
 /* Hero */
-
-#informacion-hero{
-    display: flex;
-    flex-direction: column;
-    text-align: start;
-}
-
-#informacion-hero h3{
-    font-size: 60px;
-    font-family: 'Antonio', sans-serif;
-    color:rgb(3, 32, 139, 0.899);
-}
-
-#informacion-hero p{
-    font-size: 30px;
-    font-family: 'Antonio', sans-serif;
-    color: rgb(3, 32, 139, 0.899);
-}
-
-#estatua-almafuerte img{
-    width:750px;
-    height: 350px; 
-    border-radius: 5px;
-    padding-left: 155px;
-}
-
-/* Seccion contactos */
-
-.seccion-contacto{
-    padding: 50px 10px 15px 10px;
-}
-
-.seccion_titulo{
-    background-color: white;
-}
-
-#h1_principal{
-    font-family: 'Antonio', sans-serif;
-    display: flex;
-    color: rgb(3, 32, 139, 0.899);
-    justify-content: center;
-    padding-bottom: 3%;
-}
-
-#titulo1{
-    font-family: 'Antonio', sans-serif;
-    color: black;
-    font-size: 25px;
-    text-align:center;
-}
-
-#texto1{
-    color: black;
-    font-size: 20px;
-    padding: 1.5%;
-}
-
-#texto-advertencia p{
-    color: red;
-    text-align: center;
-    font-size: 15px;
-    padding: 1.5%;
-}
-
-.contacto{
-    width: 100%;
-    padding-bottom: 25px;
-    padding-left: 534px;
-    display: flex;
-}
-
-.contacto button{
-    color: white;
-    font-family: 'Antonio', sans-serif;
-    background-color: rgb(3, 32, 139, 0.899);
-    border: 3px solid white;
-    padding: 15px 40px 15px 40px; 
-    font-size: 21px;
-    border-radius: 100px;
-    transition: all 0.2s ease-in-out;
-}
-
-.contacto button:hover{
-    background-color: white;
-    font-family: 'Antonio', sans-serif;
-    border: 3px solid rgb(3, 32, 139, 0.899);
-    color:rgb(3, 32, 139, 0.899)
-}
-
-.contacto button i{
-    color: white;
-    font-size: 30px;
-    transition: all 0.2s ease-in-out;
-}
-
-.contacto button:hover i{
-    color:rgb(3, 32, 139, 0.899);
-}
 
 /* Slider de imagenes */
 
@@ -152,38 +55,72 @@
     display: flex;
     width: 100%;
     height: 420px;
+
+    & img{
+        width: 0px;
+        flex-grow: 1;
+        object-fit: cover;
+        opacity: .8;
+        transition: .5s ease;
+    }:hover{
+        cursor: crosshair;
+        aspect-ratio: auto;
+        width: 300px;
+        opacity: 1;
+        filter: contrast(110%);
+    }
 }
 
-.slider img{
-    width: 0px;
-    flex-grow: 1;
-    object-fit: cover;
-    opacity: .8;
-    transition: .5s ease;
-}
+/* Información del colegio */
 
-.slider img:hover{
-    cursor: crosshair;
-    width: 300px;
-    opacity: 1;
-    filter: contrast(110%);
+.seccion-informacion{
+    display: flex;
+    background-color: var(--second-color);
+
+    .container-informacion{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        padding: 40px;
+
+
+        & #informacion-hero{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+
+            & h1{
+                color:var(--main-blue);
+            }
+
+            & p{
+                color: var(--main-blue);
+            }
+        }
+
+        & #estatua-almafuerte img{
+            width: 400px;
+            height: 250px;
+        }
+    }
 }
 
 /* Elegirnos */
 
-#seccion-elegirnos{
+.seccion-elegirnos{
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    padding-top: 35px;
-    padding-bottom: 30px;
-    background-color: rgb(3, 32, 139, 0.899);
-}
-
-#texto-elegirnos{
-    padding-top: 20px;
-    text-align: center;
-    font-family: 'Antonio', sans-serif;
-    font-size: 45px;
+    align-items: center;
+    background-color:var(--main-blue);
+    color:var(--second-color);
+    
+    #texto-elegirnos{
+        padding-top: 20px;
+        text-align: center;
+        font-size: 2rem;
+    }
 }
 
 .items-elegirnos{
@@ -216,59 +153,6 @@
     background-color: rgb(255, 255, 255) ;
     padding: 12px 30px;
     border-radius: 50%;
-}
-
-/* Video aniversario */
-
-#seccion-video{
-    padding-top: 55px;
-}
-
-#video{
-    display: flex;
-    justify-content: center;
-}
-
-/* Instituto */
-
-.nuestra-historia{
-    display: flex;
-    padding-top: 40px;
-    padding-bottom: 35px;
-    justify-content: center;
-}
-
-.texto-nuestra-historia{
-    font-family: 'Antonio', sans-serif;
-    color: rgb(3, 32, 139, 0.899);
-    font-size: 50px;
-}
-
-
-.seccion-textos p{
-    color: black;
-}
-
-.escudos{
-   padding: 5px;
-}
-
-.escudo img{
-    height: 100%;
-    width: 100%;
-    padding: 5px;
-    border-radius: 10px;
-    display: block;
-    transition: all 0.2s ease;
-}
-
-.escudos-contenedor{
-    padding-top: 0px;
-    margin-bottom: 30px;
-}
-
-.escudo{
-    position: relative;
 }
 
 /* Noticias */
@@ -370,18 +254,16 @@
 
 /* Footer negro*/
 
-.footer-negro{
+footer{
     display:flex;
-	bottom: 0px;
-    background-color: black;
-    justify-content: center;
-}
+    background-color: #000;
+    padding: 20px;
+    align-items: center;
+    color: var(--second-color);
 
-#texto-footer{
-    padding: 2px;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Media queries */
+
+/* Creado por Ezequiel Pistone */
 

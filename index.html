@@ -6,15 +6,12 @@
   	<meta http-equiv="X-UA-Compatible" content="IE=edge">
   	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- CSP -->
+	<meta http-equiv="Content-Security-Policy" content="script-src 'none'">
 	<!--SEO-->
 	<meta name="keywords" content="Instituto Almafuerte, IAP, Primer colegio de Pilar, Colegio en Pilar, Almafuerte">
 	<meta name="description" content="Sitio web oficial del Instituto Almafuerte">
 	<!--Favicon-->
 	<link rel="shortcut icon" href="./img/logo-alumnos-2018.png" type="image/x-icon">
-	<!--GOOGLE FONTS-->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Antonio:wght@700&family=Signika+Negative:wght@600&display=swap" rel="stylesheet">
 	<!-- Link de CSS-->
 	<link rel="stylesheet" href="style.css">
   	<!--Titulo de pagina-->
@@ -44,23 +41,25 @@
 				<img alt="Fotos de alumnos en clase" src="./img/alumnos.webp">
 				<img alt="Fotos de los directivos" src="./img/directivos.webp">
 			</section>
-		<!--Seccion apartado informacion -->
-			<div class="seccion-blanca">
-				<div id="informacion-hero">
-					<h3>INSTITUTO ALMAFUERTE</h3>
-					<p>COLEGIO LAICO
-					NIVEL SECUNDARIO
-					PROFESORES Y PRECEPTORES CAPACITADOS
-					ASOCIACION COOPERADORA</p>
-				</div>
-				<div id="estatua-almafuerte">
-					<img alt="Foto Estatua Almafuerte" src="./img/pedro-palacios.webp">
+		<!-- Apartado de informacion -->
+			<div class="seccion-informacion">
+				<div class="container-informacion">
+					<div id="informacion-hero">
+						<h1>INSTITUTO ALMAFUERTE</h1>
+						<p>COLEGIO LAICO
+						NIVEL SECUNDARIO
+						PROFESORES Y PRECEPTORES CAPACITADOS
+						ASOCIACION COOPERADORA</p>
+					</div>
+					<div id="estatua-almafuerte">
+						<img alt="Foto Estatua Almafuerte" src="./img/pedro-palacios.webp">
+					</div>
 				</div>
 			</div>
 		<!-- Seccion ¿POR QUE ELEGIRNOS? -->
-		<section>
-			<div>
-				<h2 id="texto-elegirnos">¿POR QUÉ ELEGIRNOS?</h2>
+		<section class="seccion-elegirnos">
+			<div id="texto-elegirnos">
+				<h2>¿POR QUÉ ELEGIRNOS?</h2>
 			</div>
 			<div class="container text-center">
 				<div class="row">
@@ -155,7 +154,7 @@
 		</section>
 		<!-- Footer negro -->
 		<footer>
-      		<p>© Instituto Almafuerte 1953 - Creado por E. Pistone & P. Pinto</p>
+      		<p>© 2024 Instituto Almafuerte, Todoslos derechos reservados.</p>
 		</footer>
 </body>
 </html>
