@@ -1,102 +1,49 @@
 /* Estilos generales */
 
 *{
-    list-style-type: none;
-	color: white;
-}
-
-body{
-    font-family: 'Signika Negative', sans-serif;
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* Header */
+/* Variables css */ 
+:root{
+    --main-blue: rgb(3, 32, 139, 0.899);
+    --main-font: 'Poppins';
+    --second-font: 'Antonio';
+}
 
-.header-index{
+/* Navbar */
+
+.navbar-index{
     display: flex;
-    justify-content: space-around;
     align-items: center;
-    background-color: rgb(3, 32, 139, 0.899);
-    height: 230px;
-}
-
-#navbar-derecha a{
-    display: inline;
-    font-size: 18px;
-    font-weight: 200;
-    padding-left: 45px;
-}
-
-#navbar-izquierda a{
-    display: inline;
-    font-size: 18px;
-    font-weight: 200;
-    padding-right: 45px;
-}
-
-.logo-index{
-    display:flex;
-}
-
-.logo-index img{
-    height: 170px;
-    padding: 10px;
-}
-
-.header{
-    display: flex;
-    flex-direction: row-reverse;
     justify-content: space-between;
-    align-items: center;
-    background-color: rgb(3, 32, 139, 0.899);
-    height: 190px;
-}
-
-.logo{
-    display:flex;
-    padding-right: 60px;
-}
-
-.logo img{
-    height: 150px;
-    padding: 10px;
-}
-
-.navbar a{
-    display: inline;
-    font-size: 18px;
-    font-weight: 200;
-    padding-left: 45px;
+    background-color: var(--main-blue);
 }
 
 /* Secciones */
 
 .seccion-blanca{
     display: flex;
-    padding: 25px;
-    background-color: white;
-    color: rgb(3, 32, 139, 0.899);
-    font-size: 30px;
+    color: var(--main-blue);
+    font-size: 1.5rem;
+    background-color: #fff;
+    
 }
 
 .seccion-azul{
     display: flex;
-    padding: 70px; 
-    background-color: rgb(3, 32, 139, 0.899);
-    color:white;
-}
-
-.seccion-blanca{
-    display: flex;
-    padding: 50px;
-    background-color: white;
+    background-color: var(--main-blue);
+    color:#fff;
 }
 
 .seccion-textos{
-    color: black;
-    font-size: 18px;
-    text-align: center;
-    padding: 1.5%;
+    color: #000;
+    margin: 20px;
+    font-size: 1rem;
+    text-align:justify;
+    align-items: center;
 }
 
 /* Hero */
@@ -105,7 +52,6 @@ body{
     display: flex;
     flex-direction: column;
     text-align: start;
-    padding-bottom: 30px;
 }
 
 #informacion-hero h3{
