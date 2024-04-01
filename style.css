@@ -227,7 +227,6 @@
 
 .footer-azul{
     display: flex;
-    flex-direction: row;
     background-color: var(--main-blue);
     padding: 40px;
 
@@ -235,13 +234,27 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        margin: auto;
 
         .footer-container-columna{
             display: flex;
             flex-direction: column;
+            margin: 50px;
 
             & #mapa_footer{
                 border-radius: 5px;
+            }
+
+            & .columna-lista li{
+                margin: 50px 0px;
+                text-align: center;
+                list-style-type: none;
+
+                & a{
+                    color: var(--second-color);
+                    font-size: 2rem;
+                    text-decoration: none;  
+                }
             }
         }
     }
@@ -252,19 +265,20 @@
 #texto-footer-azul{
     background-color: var(--main-blue);
     color: var(--second-color);
-    align-items: center;
+    text-align: center;
     padding: 20px;
 }
 
 /* Footer negro*/
 
 footer{
-    display:flex;
     background-color: #000;
     padding: 20px;
-    align-items: center;
-    color: var(--second-color);
 
+    & p{
+        text-align: center;
+        color: var(--second-color);
+    }
 }
 
 /* Media queries */
