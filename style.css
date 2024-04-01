@@ -25,7 +25,6 @@
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
-        padding: 10px;
 
         .navbar-logo{
             aspect-ratio: 2/2;
@@ -89,6 +88,7 @@
             display: flex;
             flex-direction: column;
             text-align: center;
+            margin: 40px;
 
             & h1{
                 color:var(--main-blue);
@@ -96,12 +96,15 @@
 
             & p{
                 color: var(--main-blue);
+                text-align: justify;
             }
         }
 
         & #estatua-almafuerte img{
             width: 400px;
             height: 250px;
+            border-radius: 5px;
+            box-shadow: 15px 15px 15px #d6d6d6;
         }
     }
 }
@@ -116,36 +119,31 @@
     background-color:var(--main-blue);
     color:var(--second-color);
     
-    #texto-elegirnos{
+    #elegirnos-titulo{
         padding-top: 20px;
         text-align: center;
         font-size: 2rem;
     }
+
+    .container-items{
+        padding: 40px;
+
+        & .container-items-row{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            
+            & .item-elegirnos{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin: 50px;
+            }
+        }
+    }
 }
 
-.items-elegirnos{
-    display: flex;
-}
-
-.elegirnos{
-    padding: 0px 50px 60px 50px;
-    background-color: rgb(3, 32, 139, 0.899);
-}
-
-.elegirnos .columna{
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-.elegirnos-titulo{
-    padding-top: 3px;
-    font-family: 'Antonio', sans-serif;
-    font-size: 22px;
-    margin: 10px 0;
-}
 
 .elegirnos i{
     font-size: 2.5rem;
@@ -157,71 +155,55 @@
 
 /* Noticias */
 
-#texto-noticias h2{
-    display: flex;
-    padding-top: 30px;
-    padding-left: 190px;
-	color: rgb(3, 32, 139, 0.899);
-    font-family: 'Antonio', sans-serif;
+.container-seccion-noticias{
+    padding: 30px 30px;
+
+    & #texto-noticias p{
+        display: flex;
+        align-items: center;
+        color: rgb(3, 32, 139, 0.899);
+    }
+    
+    & #seccion-noticias{
+        display: flex;
+        justify-content: center;
+
+        & #noticia-principal img{
+            aspect-ratio: auto;
+            padding-top: 19px;
+            border-radius: 5px;
+        }
+
+        & .noticias-pequeñas{
+            display: flex;
+            align-items: end;
+            flex-direction: column;
+            padding-right: 20px;
+
+            & img{
+                display: flex;
+                padding: 19px;
+                width: 350px;
+                height: 200px;
+                border-radius: 5px;
+            }
+
+            & #texto-noticias-pequeñas{
+                display: flex;
+                justify-content: center;
+
+                & a{
+                    color: rgb(3, 32, 139, 0.899);
+                    padding-right: 20px;
+                    text-decoration: none;
+                    font-size: 2rem;
+                }:active{
+                    color: rgba(0, 217, 255, 0.899);
+                }
+            }
+        }
+    }
 }
-
-#seccion-noticias{
-    padding-bottom: 30px;
-    display: flex;
-    justify-content: center;
-}
-
-#seccion-noticias #noticia-principal img{
-    width: 600px;
-    height: 380px;
-    padding-top: 19px;
-}
-
-.noticias-pequeñas{
-    display: flex;
-    align-items: end;
-    flex-direction: column;
-    padding-right: 20px;
-}
-
-.noticias-pequeñas img{
-    display: flex;
-    padding: 19px;
-    width: 350px;
-    height: 200px;
-}
-
-#texto-noticias-pequeña{
-    display: flex;
-    justify-content: center;
-}
-
-#texto-noticias-pequeñas a{
-    color: rgb(3, 32, 139, 0.899);
-    padding-right: 20px;
-    font-family: 'Antonio', sans-serif;
-    text-decoration: none;
-    font-size: 30px;
-}
-
-#texto-noticias-pequeñas a:active{
-    color: black;
-    padding-bottom: 5px;
-    padding-right: 20px;
-}
-
-
-/* .nav .nav_lista{
-    display: flex;
-    flex-direction: column;
-}
-
-.nav .nav_lista .nav_lista_item{
-    display: flex;
-    text-decoration: none;
-    padding: 46px;
-    color: white;
-} */
 
 /* Texto footer azul*/
 
@@ -278,6 +260,7 @@ footer{
     & p{
         text-align: center;
         color: var(--second-color);
+        font-family: 'Courier New', Courier, monospace;
     }
 }
 
