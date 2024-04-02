@@ -24,11 +24,18 @@
 			<div class="navbar-logo">
 				<img alt="logo del instituto" src="./img/logo-blanco.png">
 			</div>
-			<div class="navbar-enlaces">
-				<a aria-label="Enlace a la historia" tabindex="0" href="">INSTITUCIÓN</a>
-				<a aria-label="Enlace a vacantes" tabindex="0" href="">VACANTES</a>
-				<a aria-label="Enlace a noticias" tabindex="0" href="">NOTICIAS</a>
-				<a aria-label="Enlace a contacto" tabindex="0" href="">CONTACTO</a>
+			<div class="navbar-desplegable">
+				<button id="abrir" class="abrir-menu"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/></svg></button>
+        		<nav class="nav" id="nav">
+            		<button class="cerrar-menu" id="cerrar"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16"><path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/></svg></button>
+            		<ul class="nav-list">
+                		<li><a href="#seccion1">Seccion 1</a></li>
+                		<li><a href="#seccion2">Seccion 2</a></li>
+                		<li><a href="#seccion3">Seccion 3</a></li>
+                		<li><a href="#">Qué hacemos</a></li>
+                		<li><a href="#">Contacto</a></li>
+            		</ul>
+        		</nav>
 			</div>
 		</div>
 	</nav>
@@ -149,5 +156,7 @@
 		<footer>
       		<p>© 2024 Instituto Almafuerte, Todos los derechos reservados.</p>
 		</footer>
+		<!-- Link js-->
+		<script src="script.js"></script>
 </body>
 </html>

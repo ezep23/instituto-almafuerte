@@ -9,7 +9,7 @@
 
 /* Variables css */ 
 :root{
-    --main-blue: rgb(3, 32, 139, 0.899);
+    --main-blue: rgba(0, 37, 172, 0.899);
     --second-color: #f1f1f1;
     --main-font: 'Poppins';
     --second-font: 'Antonio';
@@ -19,6 +19,7 @@
 
 .navbar{
     background-color: var(--main-blue);
+    padding: 20px 0px;
     
     & .navbar-container{
         display: flex;
@@ -26,16 +27,31 @@
         justify-content: space-around;
         align-items: center;
 
+    
+ 
         .navbar-logo{
-            aspect-ratio: 2/2;
+            aspect-ratio: 4/4;
             object-fit: cover;
         }
 
-        .navbar-enlaces > a{
-            color: var(--second-color);
-            text-decoration: none;
-            font-size: 1.5rem;
-            margin: 10px;
+        .navbar-desplegable{
+            display: flex;
+            
+            .abrir-menu,
+            .cerrar-menu{
+                display: none;
+            }
+
+            .nav-list{
+                list-style-type: none;
+                display: flex;
+                gap: 1rem;
+
+                & li a {
+                    text-decoration: none;
+                    color: #ffffff;
+                }
+            }
         }
     }
 }
@@ -265,6 +281,77 @@ footer{
 }
 
 /* Media queries */
+
+@media screen and (max-width: 600px) {
+
+    .navbar{
+        display: flex;
+        justify-content:center;
+        align-items: center;
+
+        & .navbar-container{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .navbar-logo{
+                width: 200px;
+                height: 200px;
+            }
+
+            .navbar-desplegable{
+                display: flex;
+
+                .abrir-menu,
+                .cerrar-menu {
+                    display: block;
+                    border: 0;
+                    font-size: 1.25rem;
+                    background-color: transparent;
+                    cursor: pointer;
+                }
+
+                .abrir-menu {
+                    color: #727272;
+                }
+            
+                .cerrar-menu {
+                    color: #ececec;
+                }
+
+                .nav {
+                    opacity: 0;
+                    visibility: hidden;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: end;
+                    gap: 1rem;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    background-color: #1c1c1c;
+                    padding: 2rem;
+                    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+                }
+                
+                & .nav.visible{
+                    opacity: 1;
+                    visibility: visible;
+                }
+
+                & .nav-list{
+                    flex-direction: column;
+                    align-items: end;
+
+                    & li a{
+                        color: #ecececec;
+                    }
+                }
+            }
+        }
+    }
+}
 
 /* Creado por Ezequiel Pistone */
 
