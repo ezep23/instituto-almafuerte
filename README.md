@@ -1,6 +1,17 @@
-Este fue un proyecto escolar, en el cual junto a varias personas quisimos desarrollar el sitio web del Instituto Almafuerte para el aniversario de su fundación numero 70 en el año 2023. En su momento no se pudo terminar por la magnitud del proyecto y la inexpericiencia en varias tecnologías incluyendo malas practicas en HTML y CSS.
-    Este proyecto pasa a ser de codigo abierto para que cualquier persona pueda tener acceso y si quiere poder añadir
-modificar y eliminar partes del mismo.
+
+# Instituto Almafuerte Web
+
+Proyecto escolar año 2023.
+
+
+![App Screenshot](.)
+
+
+## Contributing
+
+Este fue un proyecto escolar, en el cual junto a varias personas quisimos desarrollar el sitio web del colegio para el aniversario de su fundación numero 70 en el año 2023. En su momento no se pudo terminar por la magnitud del proyecto.
+
+Este proyecto pasa a ser de codigo abierto para que cualquier persona pueda tener acceso y si quiere poder añadir, modificar y eliminar partes del mismo.
 
 Agredecer las siguientes personas que colaboraron en su momento:
     
@@ -8,6 +19,16 @@ Agredecer las siguientes personas que colaboraron en su momento:
     * Ignacio Albornoz (Fotos)
     * Leonel Giles (Edición de imágenes)
 
-IMPORTANTE: La rama main va a ser la rama con las últimas modificaciones que se hicieron a mediados de 2023, A la hora de enviar PR crear una nueva rama y no modificar la principal.
+#### ¡NO PUSHEAR RAMA MAIN, GRACIAS!
+## Authors
 
-Ezequiel Pistone - 2024.
+- Yo
+- [@Pepi007](https://github.com/Pepi007)
+
+
+## 🔗 Links
+[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://www.github.com/mmmongokiel)
+
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ezequielpistone/)
+
+
