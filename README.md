@@ -7,7 +7,7 @@ Proyecto escolar año 2023.
 ![App Screenshot](.)
 
 
-## Contributing
+## INTRODUCCIÓN
 
 Este fue un proyecto escolar, en el cual junto a varias personas quisimos desarrollar el sitio web del colegio para el aniversario de su fundación numero 70 en el año 2023. En su momento no se pudo terminar por la magnitud del proyecto.
 
@@ -20,7 +20,7 @@ Agredecer las siguientes personas que colaboraron en su momento:
     * Leonel Giles (Edición de imágenes)
 
 #### ¡NO PUSHEAR RAMA MAIN, GRACIAS!
-## Authors
+## AUTORES
 
 - Yo
 - [@Pepi007](https://github.com/Pepi007)
