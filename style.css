@@ -117,7 +117,7 @@ main{
         display: flex;
         flex-direction: column;
         align-items: center;
-        height: 110vh;
+        height:80vh;
         margin: 5% 10%;
         
         #eleg-texto{
@@ -149,8 +149,35 @@ main{
                 align-items: center;
                 background-color: var(--blue);
                 color: var(--white);
-                margin: 20px;
-                padding: 18vh;
+                height: 150px;
+                width: 300px;
+                margin: 30px;
+                padding: 30px;
+                overflow: hidden;
+                transition: height 0.3s;
+
+                & i{
+                    font-size: 2.4rem;
+                }
+
+                & p{
+                    font-size: 1.2rem;
+                    font-weight: bold;
+                    font-family: var(--second-font);
+                }
+
+                & span{
+                    margin-top: 40px;
+                    text-align: justify;
+
+                }
+
+                &:hover{
+                    height: auto;
+                    cursor: pointer;
+                    animation: ease-out;
+                    interpolate-size: allow-keywords;
+                }
             }
         }
     }
@@ -159,7 +186,7 @@ main{
         display: flex;
         flex-direction: column;
         align-items: start;
-        height: 80vh;
+        height: 100vh;
         margin: 5% 10%;
         
         & h3{
@@ -172,6 +199,30 @@ main{
             text-align: justify;
             margin-top: 20px;
             font-size: 1.1rem;
+        }
+
+        #imagenes{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+            gap: 20px;
+
+            #imagen-grande{
+                height: 520px;
+                width: 650px;
+            }
+
+            #imagenes-pequeñas{
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                & img{
+                    width: 350px;
+                    height: 250px;
+                }
+            }
         }
     }
 
