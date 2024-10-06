@@ -50,7 +50,7 @@ header{
 .seccion-textos{
     display: flex;
     flex-direction: column;
-    padding: 5%;
+    padding: 2%;
     margin: auto 8%;
 
     .titulos{
@@ -110,7 +110,27 @@ header{
     }
 }
 
+/* Escudos */
 
+#escudos{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto 8%;
+    padding: 4%;
+
+    .escudos-col{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        & img{
+            height: 200px;
+            width: 200px;
+        }
+    }
+}
 
 /*FOOTER*/
 
