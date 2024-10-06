@@ -73,18 +73,19 @@ main{
         & button{
             background-color: var(--blue);
             color: var(--white);
-            height: 50px;
+            height: 55px;
             width: 200px;
             margin-top: 30px;
+            border: none;
             font-weight: bold;
             font-size: 1.2rem;
-            border: 2px solid #000;
             border-radius: 50px;
             font-family: var(--second-font);
 
             &:hover{
                 background-color: var(--white);
                 color: var(--blue);
+                border: 2px solid var(--blue);
                 cursor: pointer;
                 transition: 0.3s;
             }
@@ -154,22 +155,42 @@ main{
         }
     }
 
+    #news{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        height: 80vh;
+        margin: 5% 10%;
+        
+        & h3{
+            color:var(--blue);
+            font-size: 2.5rem;
+            font-family: var(--second-font);
+        }
+
+        & span{
+            text-align: justify;
+            margin-top: 20px;
+            font-size: 1.1rem;
+        }
+    }
+
     #video{
         background-color: var(--blue);
         display: flex;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
-        height: 80vh;
-        margin: 5% 10%;     
+        height: 60vh;
+        margin: 5% 0%;
+
+        & h4{ 
+            text-align: center;
+            font-size: 2.5rem;
+            font-family: var(--second-font);
+        }
     }
 
-    #news{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        height: 80vh;
-        margin: 5% 10%;     
-    }
 }
 
 /*FOOTER*/
@@ -209,6 +230,7 @@ footer{
         flex-direction: column;
         background-color: #000;
         padding: 2%;
+        margin-top: 5px;
 
         & div{
             display: flex;
@@ -218,6 +240,19 @@ footer{
 
             & p{
                 color: var(--white);
+            }
+
+            & button{
+                font-size: 2.5rem;
+                background-color: #000;
+                color: var(--white);
+                border: none;
+
+                &:hover{
+                    color: var(--blue);
+                    transition: 0.3s;
+                    cursor:pointer;
+                }
             }
         }
     }
