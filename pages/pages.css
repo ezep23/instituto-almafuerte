@@ -64,6 +64,7 @@ header{
     
     .subtitulos{
         font-size: 2rem;
+        margin-top: 20px;
         color: var(--blue);
         font-family: var(--second-font);
     }
@@ -117,7 +118,7 @@ header{
     align-items: center;
     justify-content: space-around;
     margin: auto 8%;
-    padding: 4%;
+    padding: 2%;
 
     .escudos-col{
         display: flex;
@@ -127,7 +128,7 @@ header{
 
         & img{
             height: 200px;
-            width: 200px;
+            width: 300px;
         }
     }
 }
