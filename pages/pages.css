@@ -133,6 +133,52 @@ header{
     }
 }
 
+#metodos-contacto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto 8%;
+    padding-bottom: 2%;
+
+    .contacto-contenedor{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: var(--blue);
+        color: var(--white);
+        border-radius: 20px;
+        margin: 20px;  
+        padding: 20px; 
+
+        & p{
+            font-size: 1.5rem;
+            font-weight: 600;
+
+        }
+
+        & span{
+            text-align: justify;
+            margin-top: 20px;
+        }
+
+        & button{
+            margin-top: 20px;
+            padding: 10px;
+            border-radius: 50px;
+            border: 2px solid var(--white);
+            color: var(--blue);
+            font-weight: 600;
+
+            &:hover{
+                background-color: var(--blue);
+                color: var(--white);
+                cursor: pointer;
+                transition: 0.3s;
+            }
+        }
+    }
+}
+
 /*FOOTER*/
 
 footer{
