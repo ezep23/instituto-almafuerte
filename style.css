@@ -17,6 +17,7 @@
 /* NAVBAR*/
 header{
     background-color: var(--blue);
+    padding: 1%;
     
     nav{
         display: flex;
@@ -234,12 +235,6 @@ main{
         align-items: center;
         height: 60vh;
         margin: 5% 0%;
-
-        & h4{ 
-            text-align: center;
-            font-size: 2.5rem;
-            font-family: var(--second-font);
-        }
     }
 
 }
