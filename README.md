@@ -1,8 +1,8 @@
 
 # Instituto Almafuerte Web
 
-Proyecto escolar año 2023.
-
+>[!NOTE]
+> Proyecto escolar año 2023.
 
 ![App Screenshot](.)
 
@@ -13,7 +13,8 @@ Este fue un proyecto escolar, en el cual junto a varias personas quisimos desarr
 
 Este proyecto pasa a ser de codigo abierto para que cualquier persona pueda tener acceso y si quiere poder añadir, modificar y eliminar partes del mismo.
 
-Agredecer las siguientes personas que colaboraron en su momento:
+>[!IMPORTANT]
+> Agredecer las siguientes personas que colaboraron en su momento
     
     * Pedro Pinto (Colaborador desarrollo de código)
     * Ignacio Albornoz (Fotos)
