@@ -242,3 +242,25 @@ footer{
         }
     }
 }
+
+/* MEDIAQUERIES */
+
+/* TABLETS */ 
+@media (max-width: 1015px){
+    .contenedor-negro{
+        display: flex;
+        max-width: 700px;
+        flex-direction: column;
+        padding: 50px 40px;
+        
+    } 
+}
+
+/* CELULARES */ 
+@media (max-width: 768px){
+    .contenedor-negro{
+        display: flex;
+        flex-direction: column;
+        padding: 50px 40px;
+    } 
+}
