@@ -210,7 +210,7 @@ main{
             gap: 20px;
 
             #imagen-grande{
-                height: 520px;
+                height: 425px;
                 width: 650px;
             }
 
@@ -221,22 +221,11 @@ main{
 
                 & img{
                     width: 350px;
-                    height: 250px;
+                    height: 200px;
                 }
             }
         }
     }
-
-    #video{
-        background-color: var(--blue);
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 60vh;
-        margin: 5% 0%;
-    }
-
 }
 
 /*FOOTER*/
@@ -249,6 +238,7 @@ footer{
         display: flex;
         align-items: center;
         justify-content: space-around;
+        padding-top: 50px;
         padding: 2%;
         background-color: var(--blue);
 
