@@ -271,7 +271,6 @@ footer{
         flex-direction: column;
         background-color: #000;
         padding: 2%;
-        margin-top: 5px;
 
         & div{
             display: flex;
@@ -490,6 +489,59 @@ footer{
                     & a{
                         margin: 20px;
                         font-size: 1.3rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* MINI CELULARES */
+@media (max-width: 630px){
+    header{
+        nav{
+            & ul{
+                 & li{
+                    & a{
+                        font-size: 0.5rem;
+                    }
+                }
+            }
+        }
+    }
+    main{
+
+        #presentation{
+    
+            & span{
+                margin-top: 20px;
+                font-size: 0.8rem;
+            }
+
+            & h1{
+                font-size: 2rem;
+            }
+        }
+
+        #elegirnos{
+            #eleg-cont{
+                .contenedores{
+                    width: 200px;
+                }
+            }
+        } 
+
+        #news{
+            #imagenes{
+                
+                #imagen-grande{
+                    width: 250px;
+                }
+
+                #imagenes-pequeñas{
+                    & img{
+                        width: 120px;
+                        height: 95px;
                     }
                 }
             }
