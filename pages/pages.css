@@ -247,20 +247,88 @@ footer{
 
 /* TABLETS */ 
 @media (max-width: 1015px){
-    .contenedor-negro{
+    #escudos{
         display: flex;
-        max-width: 700px;
+        align-items: center;
         flex-direction: column;
-        padding: 50px 40px;
-        
-    } 
+
+        .escudos-col{
+            & img{
+                height: 250px;
+                width: 350px;
+            }
+        }
+    }
+
+    footer{
+        #blue-footer{
+            display: flex;
+            flex-direction: column;
+    
+            & ul{
+                display: flex;
+                flex-direction: row;
+
+                & li{
+                    & a{
+                        margin: 20px;
+                        font-size: 1.3rem;
+                    }
+                }
+            }
+        }
+    }
 }
 
 /* CELULARES */ 
 @media (max-width: 768px){
-    .contenedor-negro{
+    header{
+        padding: 0.5%;
+        
+        nav{
+            img{
+                height: 80px;
+                width: 80px;
+            }
+    
+            & ul{
+                & li{
+                    margin: 15px;
+    
+                    & a{
+                        font-size: 0.7rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* MINI CELULARES */
+
+@media (max-width: 630px){
+    header{
+        nav{
+            & ul{
+                & li{
+                    & a{
+                        font-size: 0.5rem;
+                    }
+                }
+            }
+        }
+    }
+
+    #escudos{
         display: flex;
+        align-items: center;
         flex-direction: column;
-        padding: 50px 40px;
-    } 
+
+        .escudos-col{
+            & img{
+                height: 250px;
+                width: 300px;
+            }
+        }
+    }
 }
