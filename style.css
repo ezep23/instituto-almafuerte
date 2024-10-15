@@ -480,6 +480,11 @@ footer{
         #blue-footer{
             display: flex;
             flex-direction: column;
+
+            #map{
+                width: 300px;
+                height: 300px;
+            }
     
             & ul{
                 display: flex;
@@ -535,12 +540,12 @@ footer{
             #imagenes{
                 
                 #imagen-grande{
-                    width: 250px;
+                    width: 200px;
                 }
 
                 #imagenes-pequeñas{
                     & img{
-                        width: 120px;
+                        width: 80px;
                         height: 95px;
                     }
                 }
