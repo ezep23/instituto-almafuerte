@@ -79,6 +79,8 @@ header{
         display: grid;
         place-content: center;
         margin-top: 50px;
+
+        & iframe{}
     }
 
     & button{
@@ -302,6 +304,44 @@ footer{
             }
         }
     }
+
+    #metodos-contacto{
+        .contacto-contenedor{
+            & p{
+                font-size: 0.8rem;
+                font-weight: 600;
+    
+            }
+    
+            & span{
+                font-size: 0.6rem
+            }
+    
+            & button{
+                font-size: 0.6rem;
+            }
+        }
+    }
+
+    .seccion-textos{
+        .titulos{
+            font-size: 2.3rem;
+        }
+        
+        .subtitulos{
+            font-size: 1.8rem;
+        }
+        
+        .textos{
+            font-size: 1rem;
+        }
+    
+        .video{
+            & iframe{
+                width: 500px;
+            }
+        }
+    }
 }
 
 /* MINI CELULARES */
@@ -312,9 +352,29 @@ footer{
             & ul{
                 & li{
                     & a{
-                        font-size: 0.5rem;
+                        font-size: 0.3rem;
                     }
                 }
+            }
+        }
+    }
+
+    .seccion-textos{
+        .titulos{
+            font-size: 2.3rem;
+        }
+        
+        .subtitulos{
+            font-size: 1.8rem;
+        }
+        
+        .textos{
+            font-size: 1rem;
+        }
+    
+        .video{
+            & iframe{
+                width: 350px;
             }
         }
     }
@@ -328,6 +388,30 @@ footer{
             & img{
                 height: 250px;
                 width: 300px;
+            }
+        }
+    }
+
+    footer{
+        #blue-footer{
+            & ul{
+                & li{
+                    & a{
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+
+        #text-footer{
+            & div{
+                & p{
+                    font-size: 0.6rem
+                }
+    
+                & #btn-footer{
+                    font-size: 1.8rem;
+                }
             }
         }
     }
