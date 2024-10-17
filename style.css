@@ -417,6 +417,27 @@ footer{
             }
         }
 
+        #slider{
+            display: flex;
+            width: 100%;
+            height: 80vh;
+        
+            img{
+                width: 0px;
+                flex-grow: 1;
+                object-fit: cover;
+                opacity: 0.8;
+                transition: 0.5s ease;
+        
+                &:hover{
+                    cursor: crosshair;
+                    width: 450px;
+                    opacity: 1;
+                    filter: contrast(105%);
+                }
+            }
+        }
+
         #elegirnos{
             height: 50%;
             
@@ -576,6 +597,14 @@ footer{
             }
         }
 
+        #slider{
+            img{
+                &:hover{
+                    width: 200px;
+                }
+            }
+        }
+
         #news{
             #imagenes{
                 
@@ -599,5 +628,17 @@ footer{
                 }
             }
         } 
+    }
+
+    footer{
+        #blue-footer{
+            ul{
+                li{
+                    a{
+                        font-size: 1rem;    
+                    }
+                }
+            }
+        }
     }
 }
