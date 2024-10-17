@@ -308,9 +308,8 @@ footer{
     #metodos-contacto{
         .contacto-contenedor{
             & p{
-                font-size: 0.8rem;
+                font-size: 0.6rem;
                 font-weight: 600;
-    
             }
     
             & span{
@@ -318,7 +317,7 @@ footer{
             }
     
             & button{
-                font-size: 0.6rem;
+                font-size: 0.3rem;
             }
         }
     }
@@ -352,7 +351,7 @@ footer{
             & ul{
                 & li{
                     & a{
-                        font-size: 0.3rem;
+                        font-size: 0.4rem;
                     }
                 }
             }

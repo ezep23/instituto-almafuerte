@@ -576,7 +576,7 @@ footer{
             & ul{
                  & li{
                     & a{
-                        font-size: 0.3rem;
+                        font-size: 0.4rem;
                     }
                 }
             }
@@ -637,6 +637,18 @@ footer{
                     a{
                         font-size: 1rem;    
                     }
+                }
+            }
+        }
+
+        #text-footer{
+            & div{
+                & p{
+                    font-size: 0.6rem
+                }
+    
+                & #btn-footer{
+                    font-size: 1.8rem;
                 }
             }
         }
